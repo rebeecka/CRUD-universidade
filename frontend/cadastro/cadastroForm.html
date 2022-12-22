@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js" integrity="sha512-qSnlnyh7EcD3vTqRoSP4LYsy2yVuqqmnkM9tW4dWo6xvAoxuVXyM36qZK54fyCmHoY1iKi9FJAUZrlPqmGNXFw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
+    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+	   
+	  
+
+    <title>Cadastro Universitário</title>
+</head>
+<body>
+    
+    
+   <div class="container">
+    <h4>Cadastro Universitário</h4>
+    <form autocomplete="off" method="post" onsubmit="getElements()">
+     
+     <label for="nome"> <i class="small material-icons">account_box</i> <h6>Nome:</h6></label>
+     <input  role="presentation" type="text" id="nome" placeholder="Insira o nome" name="nome" required autocomplete="off">  
+     <br>	 
+
+     
+     <label for="cpf"><i class="small material-icons">fingerprint</i> <h6>CPF:</h6></label>
+     <input type="text" id="cpf" placeholder="Insira o CPF" name="cpf" required role="presentation">
+    <br>
+    
+     <div class="radio-sexo">
+           <i class="small  material-icons icon-blue">wc</i><label> <h6 id="h6sexo" >Sexo:</h6></label>
+         
+		
+	  <label  id="labelmasculino">
+        <input id="sexo" name="sexo" type="radio" checked value="masculino" />
+        <span>Masculino</span>
+      </label>
+	  
+	   <label>
+        <input id="sexo" name="sexo" type="radio" value="feminino" />
+        <span>Feminino</span>
+      </label>
+         
+    </div>
+	 <br>
+
+    
+     <label for="endereco"><i class="small material-icons">location_on</i><h6>Endereço:</h6></label>
+     <input type="text" id="endereco" placeholder="Insira o Endereço" name="endereco" required role="presentation">
+	 <br>
+
+     
+     <label for="datadenascimento"><i class="small material-icons">insert_invitation</i><h6>Data de Nascimento:</h6></label>
+     <input type="date" id="datadenascimento" name="datadenascimento" required role="presentation">
+     <br>
+	 
+    
+     <label for="email"> <i class="small material-icons">mail</i><h6>Email:</h6></label>
+     <input type="email" id="email" name="email" placeholder="Insira o E-mail" required role="presentation">
+	 <br>
+
+     
+     <label for="curso"><i class="small material-icons">import_contacts</i><h6>Curso:</h6></label>
+     <input type="text" id="curso" name="curso" placeholder="Insira o Curso"  required role="presentation">
+	 <br>
+
+    
+     <label for="matricula"> <i class="small material-icons">web</i><h6>Matricula:</h6></label>
+     <input type="text" id="matricula" name="matricula" placeholder="Insira a Matrícula" required role="presentation">
+	 <br>
+
+     
+     <label for="turno"><i class="small material-icons">watch_later</i><h6>Turno:</h6></label>
+
+
+     <div class="input-field col s12">
+     <select id="turno" class="input-field">
+       <option value="manha" selected>Manhã</option>
+       <option value="vespertino">Vespertino</option>
+       <option value="noturno">Noturno</option>	
+       <option value="integral">Integral</option>
+     </select>
+	 </div>
+	 
+	
+	
+      
+		
+		
+   <div class="botao-container">
+    <a href="../home/home.html" target="_blank" rel="opener"><button class="btn green waves-effect waves-yellow"><a href="../home/home.html" target="_blank">
+    <i class="material-icons right">send</i>Menu</a></button></a>
+    
+    <button class="btn blue waves-effect waves-yellow" type="submit" name="action" id="botaolistar">
+      <i class="material-icons right">send</i>Cadastrar</button>
+    </form>
+    </div>
+   </div>
+
+   <div>--</div>
+  
+</body>
+</html>

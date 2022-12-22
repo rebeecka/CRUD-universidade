@@ -1,0 +1,161 @@
+html,body {
+    background-color: #212121;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+	height: 100%;
+	width: 100%;
+	
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+    max-width: 100%;  
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    color: #fcbe24;
+    margin-bottom: 20px;
+}
+
+
+.collapsible {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: justify;
+    border: none;
+}
+
+.collapsible-body i:hover {
+    color: #fcbe24;
+}
+
+
+.collapsible li {
+    border-radius: 20px;
+    text-decoration: none;
+    list-style: none;
+    text-align: justify;
+    margin: 35px;
+    width: 350px;
+    
+    
+}
+
+.collapsible button {
+margin: 5px;
+}
+
+
+.collapsible h3 {
+    background-color: black;
+    color: #fcbe24;
+    text-align: center;
+    width: 300px;
+    
+}
+
+.collapsible-body {
+    background-color: rgb(197, 192, 192);
+   
+}
+
+
+
+
+
+.collapsible-header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  
+    
+}
+
+
+.collapsible label{
+  display: inline;
+}
+
+.collapsible h5 {
+border-bottom: 1px solid black;
+font-size: 1rem;
+
+}
+
+
+h5:hover {
+ background-color: black;
+ color: #fcbe24;
+}
+
+
+.collapsible h6 {
+    background-color: black;
+    color: #fcbe24;
+    font-size: 1rem;
+    
+    padding: 5px 5px 5px 5px;
+    
+}
+
+.collapsible h6:hover {
+    background-color: rgb(197, 192, 192);
+    color: black;
+}
+
+.collapsible-header i {
+    color: #fcbe24;
+    margin-top: 20px;
+}
+
+
+
+
+
+.notfound {
+    color: white;
+    text-align: center;
+}
+
+.notfound img {
+    width: 50%;
+    border-radius: 40px;
+}
+
+
+
+
+
+
+
+@media (max-width: 411px) {
+    .container {
+        
+    }
+
+    .collapsible{
+        margin-top: 50px;
+    }
+    
+  }
+
+
+  @media (max-width: 732px) {
+    .container {
+       
+    }
+
+    .collapsible {
+        margin-top: 20px;
+    }
+    
+  }
+
+  

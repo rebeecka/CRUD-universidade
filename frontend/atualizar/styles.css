@@ -1,0 +1,123 @@
+html,body {
+    background-color: #212121;
+    font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	width: 100%;
+    margin: auto;
+	
+}
+
+.container-atualizar {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    max-width: 100vh;  
+    flex-wrap: nowrap;
+    margin: 10px auto;
+    max-height: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.container-atualizar button {
+    margin-left: 195px;
+    margin-top: 10px;
+    color: black;
+    margin-bottom: 50px;
+}
+
+ .input-disabled {
+    color: rgb(179, 175, 175);
+}
+
+h3 {
+    text-align: center;
+    color: #fcbe24;
+    margin-bottom: -10px;
+}
+
+h5 {
+    text-align: center;
+    color: #fcbe24;
+    margin-bottom: -10px;
+}
+
+
+
+h6:hover {
+ color: #fcbe24;
+ background-color: black;
+}
+
+
+ h6 {
+    color: #fcbe24;
+    font-size: 1rem;
+    
+    padding: 5px 5px 5px 5px;
+    
+}
+
+
+input {
+    color: white;
+    margin-bottom: 25px;
+}
+
+
+
+
+@media (max-width: 411px) {
+    .container {
+        
+    }
+
+    .collapsible{
+        margin-top: 50px;
+    }
+    
+  }
+
+
+  @media (max-width: 732px) {
+    .container {
+       
+    }
+
+    .collapsible {
+        margin-top: 20px;
+    }
+    
+  }
+
+  
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+    max-width: 100%;  
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    color: #fcbe24;
+    margin-bottom: 10px;
+}
+
+select {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
